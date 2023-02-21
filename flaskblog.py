@@ -12,7 +12,7 @@ class User(db.Model):
     username =db.column(db.String(20), nullable=False, unique=True)
     email = db.column(db.String(120), nullable=False, unique=True)
     image_file = db.column(db.String(120), nullable=False, unique=False, default='default.jpg')
-    
+    password = db.Column(db.string(60), nullable=False)
 
 
 posts = [
